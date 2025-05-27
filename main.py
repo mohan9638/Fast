@@ -48,7 +48,7 @@ zipimg = "https://i.postimg.cc/C5T2SN20/photo-2025-04-02-18-19-12.jpg"
 credit =("ROWDY") 
 OWNER = int(os.environ.get("OWNER",7003164707))
 try: 
-    ADMINS=[7003164707] 
+    ADMINS=[5927517339] 
     for x in (os.environ.get("ADMINS", "7003164707").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
@@ -61,12 +61,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 7003164707 # Replace with the actual owner's user ID
+OWNER_ID = 5927517339 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [7003164707]
+SUDO_USERS = [5927517339]
 
-AUTH_CHANNEL = -1002569058515
+AUTH_CHANNEL = -1002611586324
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
