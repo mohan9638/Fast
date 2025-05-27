@@ -675,11 +675,6 @@ async def upload(bot: Client, m: Message):
                     zip_count += 1
                 else:
                     video_count += 1
-        os.remove(x)
-    except:
-        await m.reply_text("😶𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗙𝗶𝗹𝗲 𝗜𝗻𝗽𝘂𝘁😶")
-        os.remove(x)
-        return
    
     await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **1**")
     input0: Message = await bot.listen(editable.chat.id)
